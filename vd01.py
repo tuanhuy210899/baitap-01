@@ -3,7 +3,9 @@ urls = (
 '/', 'index'
 )
 class index:
-   from math import sqrt
+  
+    def GET(self):
+       from math import sqrt
 
 print("Giải phương trình bậc 2: ax^2 + bx + c = 0")
 a = float(input("Nhập a: "))
@@ -32,7 +34,6 @@ else:
         print("x1 = ", float((-b - sqrt(delta)) / (2 * a)))
         print("x2 = ", float((-b + sqrt(delta)) / (2 * a)))
 
-    def GET(self):
         return "Welcome !!! chờ đây ! đi làm chi !"
 
 if __name__ == "__main__":
